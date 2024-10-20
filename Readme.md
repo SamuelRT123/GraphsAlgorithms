@@ -41,6 +41,25 @@ Este repositorio incluye los siguientes algoritmos de grafos:
 
 A continuación se muestran algunos ejemplos de grafos utilizados en las implementaciones:
 
+1. **Grafo 1**:
+   ![image](https://github.com/user-attachments/assets/9eb93a1c-ce80-43a4-9a46-ac53fc5ef49e)
+
+2. **Grafo 2**:
+   ![image](https://github.com/user-attachments/assets/9eb93a1c-ce80-43a4-9a46-ac53fc5ef49e)
+
+3. **Grafo 3**:
+   ![image](https://github.com/user-attachments/assets/9eb93a1c-ce80-43a4-9a46-ac53fc5ef49e)
+
+4. **Grafo 4**:
+   ![image](https://github.com/user-attachments/assets/9eb93a1c-ce80-43a4-9a46-ac53fc5ef49e)
+
+5. **Grafo 5**:
+   ![image](https://github.com/user-attachments/assets/9eb93a1c-ce80-43a4-9a46-ac53fc5ef49e)
+
+6. **Grafo 6**:
+   ![image](https://github.com/user-attachments/assets/9eb93a1c-ce80-43a4-9a46-ac53fc5ef49e)
+
+
 ## Complejidades de los Algoritmos
 
 | Algoritmo         | Complejidad Temporal          | Complejidad Espacial   |
