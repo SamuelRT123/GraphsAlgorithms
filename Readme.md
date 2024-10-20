@@ -41,22 +41,22 @@ Este repositorio incluye los siguientes algoritmos de grafos:
 
 A continuación se muestran algunos ejemplos de grafos utilizados en las implementaciones:
 
-1. **Grafo 1**: 
+1. **Grafo 1**: <br>
    ![image](https://github.com/user-attachments/assets/9eb93a1c-ce80-43a4-9a46-ac53fc5ef49e)
 
-2. **Grafo 2**: 
+2. **Grafo 2**: <br>
    ![image](https://github.com/user-attachments/assets/cf3fcfb3-0954-4982-a498-91136129fedd)
 
-3. **Grafo 3**:
+3. **Grafo 3**:<br>
    ![image](https://github.com/user-attachments/assets/9eb93a1c-ce80-43a4-9a46-ac53fc5ef49e)
 
-4. **Grafo 4**:
+4. **Grafo 4**:<br>
    ![image](https://github.com/user-attachments/assets/9eb93a1c-ce80-43a4-9a46-ac53fc5ef49e)
 
-5. **Grafo 5**:
+5. **Grafo 5**:<br>
    ![image](https://github.com/user-attachments/assets/9eb93a1c-ce80-43a4-9a46-ac53fc5ef49e)
 
-6. **Grafo 6**:
+6. **Grafo 6**:<br>
    ![image](https://github.com/user-attachments/assets/9eb93a1c-ce80-43a4-9a46-ac53fc5ef49e)
 
 
