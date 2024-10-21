@@ -52,7 +52,8 @@ A continuación se muestran algunos ejemplos de grafos utilizados en las impleme
 
 
 4. **Grafo 4**:<br>
-   ![image](https://github.com/user-attachments/assets/9eb93a1c-ce80-43a4-9a46-ac53fc5ef49e)
+   ![image](https://github.com/user-attachments/assets/f9c69c51-7bb8-4205-93e5-ee8531ce20ab)
+
 
 5. **Grafo 5**:<br>
    ![image](https://github.com/user-attachments/assets/9eb93a1c-ce80-43a4-9a46-ac53fc5ef49e)
