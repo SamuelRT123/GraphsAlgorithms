@@ -1,7 +1,7 @@
 # Algoritmos de Grafos
 
 Este repositorio contiene una colección de algoritmos de grafos implementados en Python. Los algoritmos incluyen métodos para trabajar con grafos dirigidos y no dirigidos, ponderados y no ponderados, y cada implementación está acompañada de ejemplos y análisis de complejidad.
-- Se hace en python y sin crear clases, atributos o constructores para facilitar su implementación y lectura.
+- Se hace en python y sin crear clases, atributos o constructores para facilitar su entendimiento y lectura.
 - Dentro de cada carpeta se encuentran los algoritmos correspondientes y la solución a problemas tipicos para estos algoritmos.
 
 ## Contenido
