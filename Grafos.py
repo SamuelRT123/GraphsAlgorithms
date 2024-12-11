@@ -60,7 +60,9 @@ def Grafo1():
     return grafo
 
 def Grafo2():
-    
+    """
+    Grafo no dirigo, no ponderado, 7 vertices
+    """
     vertices = ["0", "1", "2", "3", "4", "5", "6", "7"]
     arcos =[
         ("0","1"),("0","3"),
@@ -70,7 +72,7 @@ def Grafo2():
         ("4","2"),("4","7"),
         ("5","1"),("5","6"),("5","7"),
         ("6","5"),("6","2"),
-        ("7","3"),("7","4"),("7","5"),
+        ("7","3"),("7","4"),("7","5")
         
     ]
     
@@ -79,18 +81,56 @@ def Grafo2():
     return grafo
 
 def Grafo3():
-    grafo={}
-    vertices=[]
-    arcos=[]
-    pesos=[]
-    pass
+    vertices = ["0", "1", "2", "3", "4"]
+    arcos =[
+        ("0","1"),
+        ("1","3"),("1","2"),
+        ("2","4"),
+        ("3","4")
+    ]
+    
+    pesos = {
+        "01":10,
+        "13":5,
+        "12":10,
+        "24":7,
+        "34":5 
+    }
+    
+    grafo= agregarVerticesYArcosNoDirigido(vertices,arcos)
+    
+    return grafo,pesos
+
 
 def Grafo4():
-    grafo={}
-    vertices=[]
-    arcos=[]
-    pesos=[]
-    pass
+    vertices = ["0", "1", "2", "3", "4","5","6","7"]
+    arcos =[
+        ("0","3"),("0","4"),("0","2"),
+        ("1","5"),("1","6"),
+        ("2","0"),("2","4"),("2","5"),
+        ("3","0"),("3","5"),
+        ("4","0"),("4","2"),("4","6"),
+        ("5","3"),("5","1"),("5","2"),("5","6"),
+        ("6","1"),("6","5"),("6","4")
+    ]
+    
+    pesos = {
+        "03":1,
+        "04":8,
+        "02":2,
+        "24":1,
+        "15":1,
+        "16":6,
+        "56":3,
+        "35":5,
+        "46":7,
+        "25":6 
+    }
+    
+    grafo= agregarVerticesYArcosNoDirigido(vertices,arcos)
+    
+    return grafo,pesos,arcos
+
 
 def Grafo5():
     grafo={}
