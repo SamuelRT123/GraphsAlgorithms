@@ -20,21 +20,29 @@ Este repositorio incluye los siguientes algoritmos de grafos:
 2. **Búsqueda en Amplitud (BFS)**  
    Implementación de la búsqueda en amplitud.
 
-3. **Dijkstra**  
+3. **DFO**  
    Algoritmo para encontrar el camino más corto desde un nodo fuente a todos los demás nodos en un grafo ponderado.
 
-4. **Prim**  
+3. **Kosajaru**  
+   Algoritmo para encontrar el camino más corto desde un nodo fuente a todos los demás nodos en un grafo ponderado.
+
+4. **Dijkstra**  
+   Algoritmo para encontrar el camino más corto desde un nodo fuente a todos los demás nodos en un grafo ponderado.
+
+5. **Prim**  
    Algoritmo para encontrar el árbol de expansión mínimo en un grafo ponderado.
 
-5. **Kruskal**  
+6. **Kruskal**  
    Algoritmo para encontrar el árbol de expansión mínimo en un grafo ponderado.
 
-6. **Floyd-Warshall**  
+7. **Floyd-Warshall**  
    Algoritmo para encontrar los caminos más cortos entre todos los pares de nodos.
 
-7. **Bellman-Ford**  
+8. **Bellman-Ford**  
    Algoritmo para encontrar el camino más corto desde un nodo fuente en un grafo que puede tener aristas con pesos negativos.
-8. **Ford-Fulkerson**  
+9. **Ford-Fulkerson**  
+   Algoritmo para calcular el flujo máximo en un grafo de flujo.
+10. **Dinic**  
    Algoritmo para calcular el flujo máximo en un grafo de flujo.
 
 ## Grafos de Ejemplo

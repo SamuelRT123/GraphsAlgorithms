@@ -9,24 +9,23 @@ import Grafos as gr
 import heapq
 from collections import deque
 
-def dfs(grafo):
-    #Usualmente el origen se pasa por parametro
-    origen= list(grafo.keys())[0]
-    
-    pila = [origen]
+def bfs(grafo):
+    # Primer nodo del grafo como origen
+    origen = list(grafo.keys())[0]
+    cola = deque([origen])
     visitados = set()
-    
-    while pila:
-        nodo = pila.pop() 
+
+    while cola:
+        nodo = cola.popleft()  # Sacar el primer elemento de la cola, diferente de usar solo pop()
         if nodo not in visitados:
-            print(nodo) 
+            print(nodo)
             visitados.add(nodo)
-                
+
             for vecino in grafo[nodo]:
                 if vecino not in visitados:
-                    pila.append(vecino)
+                    cola.append(vecino)
 
-grafo1= gr.Grafo1()
-grafo2= gr.Grafo2()
+grafo1 = gr.Grafo1()
+grafo2 = gr.Grafo2()
 
-dfs(grafo1)
+bfs(grafo1)

@@ -81,12 +81,13 @@ def Grafo2():
     return grafo
 
 def Grafo3():
-    vertices = ["0", "1", "2", "3", "4"]
+    vertices = ["0", "1", "2", "3", "4","5"]
     arcos =[
         ("0","1"),
         ("1","3"),("1","2"),
         ("2","4"),
-        ("3","4")
+        ("3","4"),
+        ("4","5")
     ]
     
     pesos = {
@@ -94,7 +95,8 @@ def Grafo3():
         "13":5,
         "12":10,
         "24":7,
-        "34":5 
+        "34":5,
+        "45":15
     }
     
     grafo= agregarVerticesYArcosNoDirigido(vertices,arcos)
