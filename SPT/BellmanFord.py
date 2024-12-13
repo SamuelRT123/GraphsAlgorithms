@@ -1,36 +1,30 @@
-import sys
-import os
+def BellmanFord(graph, origen):
+    distanceTo = {v: float("inf") for v in graph}
+    distanceTo[origen] = 0
 
-current_dir = os.path.dirname(os.path.abspath(__file__))
-parent_dir = os.path.abspath(os.path.join(current_dir, '..')) 
-sys.path.append(parent_dir)
+    TotalConexiones = []
+    pesos = {}
+    for u in graph:
+        for v, weight in graph[u]:
+            TotalConexiones.append((u, v))
+            pesos[f"{u}{v}"] = weight
 
-import Grafos as gr
-import heapq
-
-def BellmanFord(grafo,origen,pesos,TotalConexiones):
-    
-    distanceTo={}
-    for vertice in grafo:
-        if vertice == origen:
-            distanceTo[vertice]=0
-        else:
-            distanceTo[vertice]=float("inf")
-    
-    for _ in range(len(grafo) - 1):
-        for conexion in TotalConexiones:
-            origen, verticeDestino= conexion
-            if (origen + verticeDestino) in pesos:
-                costoArco= pesos[origen+verticeDestino]
-            else:
-                costoArco=pesos[verticeDestino+origen]
-                
-            if distanceTo[origen] != float("inf"):
-                
-                if distanceTo[origen] + costoArco < distanceTo[verticeDestino]:
-                    distanceTo[verticeDestino] = distanceTo[origen] + costoArco
+    for _ in range(len(graph) - 1):
+        for origen, destino in TotalConexiones:
+            if distanceTo[origen] + pesos[f"{origen}{destino}"] < distanceTo[destino]:
+                distanceTo[destino] = distanceTo[origen] + pesos[f"{origen}{destino}"]
 
     return distanceTo
 
-grafo,pesos,arcos= gr.Grafo4()
-print( BellmanFord(grafo,"1",pesos,arcos))
+graph = {
+    0: [(1, 4), (2, 1)],
+    1: [(3, 1)],
+    2: [(1, 2), (3, 5)],
+    3: [(4, 3)],
+    4: []
+}
+
+print("Matriz de distancias más cortas:")
+for v in graph:
+    row = BellmanFord(graph, v)
+    print(list(row.values()))

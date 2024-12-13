@@ -1,6 +1,6 @@
 import heapq
 
-def Dijkstra(grafo, origin):
+def Dijkstra(grafo,origin):
     distTo = {}
 
     for vertex in grafo:
@@ -26,3 +26,15 @@ def Dijkstra(grafo, origin):
                 heapq.heappush(minheap, (distance + peso, nodo))
 
     return distTo
+graph = {
+    0: [(1, 4), (2, 1)],
+    1: [(3, 1)],
+    2: [(1, 2), (3, 5)],
+    3: [(4, 3)],
+    4: []
+}
+
+print("Matriz de distancias más cortas:")
+for v in graph:
+    row= Dijkstra(graph,v)
+    print(list(row.values()))
