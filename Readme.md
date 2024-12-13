@@ -1,8 +1,9 @@
 # Algoritmos de Grafos
 
-Este repositorio contiene una colección de algoritmos de grafos implementados en Python. Los algoritmos incluyen métodos para trabajar con grafos dirigidos y no dirigidos, ponderados y no ponderados, y cada implementación está acompañada de ejemplos y análisis de complejidad.
-- Se hace en python y sin crear clases, atributos o constructores para facilitar su entendimiento y lectura.
-- Dentro de cada carpeta se encuentran los algoritmos correspondientes y la solución a problemas tipicos para estos algoritmos.
+Este repositorio contiene una colección de algoritmos de grafos implementados en Python. Los algoritmos incluyen métodos para trabajar con grafos dirigidos y no dirigidos, ponderados y no ponderados. Cada implementación está acompañada de ejemplos y un análisis de complejidad.
+
+- Se utiliza Python sin crear clases, atributos ni constructores para facilitar la comprensión y lectura.
+- Dentro de cada carpeta se encuentran los algoritmos correspondientes y la solución a problemas típicos asociados a estos algoritmos.
 
 ## Contenido
 
@@ -14,36 +15,38 @@ Este repositorio contiene una colección de algoritmos de grafos implementados e
 
 Este repositorio incluye los siguientes algoritmos de grafos:
 
-1. **Búsqueda en Profundidad (DFS)**  
-   Implementación de la búsqueda en profundidad en grafos dirigidos y no dirigidos.
+1. **Búsqueda en Profundidad (DFS)**\
+   Realiza un recorrido por los nodos de un grafo explorando tan profundamente como sea posible antes de retroceder. Utilizado en problemas como detección de ciclos y componentes conexos.
 
-2. **Búsqueda en Amplitud (BFS)**  
-   Implementación de la búsqueda en amplitud.
+2. **Búsqueda en Amplitud (BFS)**\
+   Realiza un recorrido nivel por nivel, explorando los nodos vecinos antes de avanzar a la siguiente capa. Comúnmente utilizado para encontrar la distancia mínima en grafos no ponderados.
 
-3. **DFO**  
-   Algoritmo para encontrar el camino más corto desde un nodo fuente a todos los demás nodos en un grafo ponderado.
+3. **Ordenación Topológica (DFO)**\
+   Encuentra un orden lineal de los vértices en un grafo dirigido acíclico (DAG).&#x20;
 
-3. **Kosajaru**  
-   Algoritmo para encontrar el camino más corto desde un nodo fuente a todos los demás nodos en un grafo ponderado.
+4. **Kosaraju**\
+   Algoritmo para encontrar componentes fuertemente conexos en grafos dirigidos.
 
-4. **Dijkstra**  
-   Algoritmo para encontrar el camino más corto desde un nodo fuente a todos los demás nodos en un grafo ponderado.
+5. **Dijkstra**\
+   Encuentra el camino más corto desde un nodo fuente a todos los demás nodos en un grafo con pesos no negativos.
 
-5. **Prim**  
-   Algoritmo para encontrar el árbol de expansión mínimo en un grafo ponderado.
+6. **Prim**\
+   Encuentra el árbol de expansión mínimo en un grafo ponderado, asegurando que el costo total sea mínimo.
 
-6. **Kruskal**  
-   Algoritmo para encontrar el árbol de expansión mínimo en un grafo ponderado.
+7. **Kruskal**\
+   Otro algoritmo para encontrar el árbol de expansión mínimo, trabajando con un enfoque de "aristas primero".
 
-7. **Floyd-Warshall**  
-   Algoritmo para encontrar los caminos más cortos entre todos los pares de nodos.
+8. **Floyd-Warshall**\
+   Calcula los caminos más cortos entre todos los pares de nodos en un grafo, permitiendo pesos negativos.
 
-8. **Bellman-Ford**  
-   Algoritmo para encontrar el camino más corto desde un nodo fuente en un grafo que puede tener aristas con pesos negativos.
-9. **Ford-Fulkerson**  
-   Algoritmo para calcular el flujo máximo en un grafo de flujo.
-10. **Dinic**  
-   Algoritmo para calcular el flujo máximo en un grafo de flujo.
+9. **Bellman-Ford**\
+   Encuentra el camino más corto desde un nodo fuente, soportando aristas con pesos negativos y detectando ciclos negativos.
+
+10. **Ford-Fulkerson**\
+    Calcula el flujo máximo en un grafo de flujo utilizando un enfoque iterativo basado en aumentos.
+
+11. **Dinic**\
+    Optimiza el cálculo del flujo máximo en un grafo de flujo mediante niveles y caminos bloqueados.
 
 ## Grafos de Ejemplo
 
@@ -63,26 +66,23 @@ A continuación se muestran algunos ejemplos de grafos utilizados en las impleme
    ![image](https://github.com/user-attachments/assets/f9c69c51-7bb8-4205-93e5-ee8531ce20ab)
 
 
-5. **Grafo 5**:<br>
-   ![image](https://github.com/user-attachments/assets/9eb93a1c-ce80-43a4-9a46-ac53fc5ef49e)
-
-6. **Grafo 6**:<br>
-   ![image](https://github.com/user-attachments/assets/9eb93a1c-ce80-43a4-9a46-ac53fc5ef49e)
-
-
 ## Complejidades de los Algoritmos
 
-| Algoritmo         | Complejidad Temporal          | Complejidad Espacial   |
-|--------------------|-------------------------------|-------------------------|
-| Búsqueda en Profundidad (DFS) | O(V + E)                       | O(V)                    |
-| Búsqueda en Amplitud (BFS)    | O(V + E)                       | O(V)                    |
-| Dijkstra                     | O((V + E) log V)               | O(V)                    |
-| Prim                         | O(E log V)                     | O(V)                    |
-| Kruskal                      | O(E log E)                     | O(V)                    |
-| Floyd-Warshall               | O(V³)                          | O(V²)                   |
-| Bellman-Ford                 | O(V * E)                       | O(V)                    |
-| Ford-Fulkerson               | O(E * f)                       | O(V)                    |
+| Algoritmo                     | Complejidad Temporal | Complejidad Espacial |
+| ----------------------------- | -------------------- | -------------------- |
+| Búsqueda en Profundidad (DFS) | O(V + E)             | O(V)                 |
+| Búsqueda en Amplitud (BFS)    | O(V + E)             | O(V)                 |
+| Ordenación Topológica (DFO)   | O(V + E)             | O(V)                 |
+| Kosaraju                      | O(V + E)             | O(V)                 |
+| Dijkstra                      | O((V + E) log V)     | O(V)                 |
+| Prim                          | O(E log V)           | O(V)                 |
+| Kruskal                       | O(E log E)           | O(V)                 |
+| Floyd-Warshall                | O(V³)                | O(V²)                |
+| Bellman-Ford                  | O(V \* E)            | O(V)                 |
+| Ford-Fulkerson                | O(E \* f)            | O(V)                 |
+| Dinic                         | O(V² \* E)           | O(V + E)             |
 
 - **V**: Número de vértices
 - **E**: Número de aristas
 - **f**: Valor máximo del flujo
+
