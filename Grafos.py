@@ -132,25 +132,3 @@ def Grafo4():
     grafo= agregarVerticesYArcosNoDirigido(vertices,arcos)
     
     return grafo,pesos,arcos
-
-
-def Grafo5():
-    grafo={}
-    vertices=[]
-    arcos=[]
-    pesos=[]
-    pass
-
-def Grafo6():
-    grafo={}
-    vertices=[]
-    arcos=[]
-    pesos=[]
-    pass
-
-def Grafo7():
-    grafo={}
-    vertices=[]
-    arcos=[]
-    pesos=[]
-    pass

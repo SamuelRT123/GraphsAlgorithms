@@ -16,18 +16,18 @@ def PRIM(grafo,pesos):
     mst = []
     total=0
     # Agregar las aristas del nodo inicial
-    agregar_aristas(origen, visitado, min_heap, grafo)
+    agregar_aristas(origen, visitado, min_heap, grafo, pesos)
 
     while min_heap and len(visitado) < len(grafo):
         peso, u, v = heapq.heappop(min_heap)
         if v not in visitado:
             total+=peso
             mst.append((u, v, peso))
-            agregar_aristas(v, visitado, min_heap, grafo)
+            agregar_aristas(v, visitado, min_heap, grafo,pesos)
     
     return total
 
-def agregar_aristas(vertice, visitado, min_heap, grafo):
+def agregar_aristas(vertice, visitado, min_heap, grafo, pesos):
     visitado.add(vertice)
     for vecino in grafo[vertice]:
         if vecino not in visitado:

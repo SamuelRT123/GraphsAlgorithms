@@ -62,3 +62,8 @@ def kruskal(grafo,pesos):
 grafo3,pesos= gr.Grafo3()
     
 kruskal(grafo3,pesos)
+
+"""
+La estructura union-find no es inneherente a la implementación de Kruskal, pero es una estructura de datos que se utiliza para optimizar el algoritmo.
+La estrucutura tambien se puede utilizar para resolver distitnos problemas, como por ejemplo, encontrar k grupos.
+"""

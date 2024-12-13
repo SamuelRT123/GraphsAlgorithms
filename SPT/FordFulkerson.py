@@ -1,3 +1,4 @@
+
 def FloydWarschall(vertices, MapConexiones):
     n = len(vertices)
     dp = [[float('inf')] * n for _ in range(n)]
