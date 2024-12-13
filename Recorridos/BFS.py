@@ -25,6 +25,35 @@ def bfs(grafo):
                 if vecino not in visitados:
                     cola.append(vecino)
 
+
+#Ejemplo de uso
+
+def es_bipartito(grafo):
+    """
+    Verifica si un grafo es bipartito.
+    """
+    n = len(grafo)
+    # Todos los vértices inicialmente no coloreados
+    color = [-1] * n
+    
+    for inicio in range(n):
+        if color[inicio] == -1:
+            cola = deque([inicio])
+            color[inicio] = 0
+            
+            while cola:
+                actual = cola.popleft()
+                
+                for vecino in grafo[actual]:
+                    if color[vecino] == -1:
+                        #No puede haber 2 colores iguales conectados, conecta con el opuesto
+                        color[vecino] = 1 - color[actual]
+                        cola.append(vecino)
+                    elif color[vecino] == color[actual]:
+                        return False
+    return True
+
+
 grafo1 = gr.Grafo1()
 grafo2 = gr.Grafo2()
 
